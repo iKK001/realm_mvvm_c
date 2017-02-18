@@ -1,0 +1,847 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DDAB098D010BD043EE82BF8 /* Pods_LifeSound.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DEA714381F8556E1D84408 /* Pods_LifeSound.framework */; };
+		6B635779270A7D9B15544534 /* Pods_LifeSoundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0760F6D63713C7C7C0821092 /* Pods_LifeSoundUITests.framework */; };
+		779700ADB2D8C2E5DB5E6988 /* Pods_LifeSoundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833B03251110CD2AE118A13D /* Pods_LifeSoundTests.framework */; };
+		8F17C6E91E54BE3E00A50D65 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F17C6E81E54BE3E00A50D65 /* AppConstants.swift */; };
+		8F312DAE1E54B8E700C3E52C /* MVVMCAuthenticateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F312DAC1E54B8E700C3E52C /* MVVMCAuthenticateModel.swift */; };
+		8F312DAF1E54B8E700C3E52C /* MVVMCBalancesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F312DAD1E54B8E700C3E52C /* MVVMCBalancesModel.swift */; };
+		8F312DB21E54B90700C3E52C /* AuthenticateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F312DB01E54B90700C3E52C /* AuthenticateModel.swift */; };
+		8F312DB31E54B90700C3E52C /* BalancesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F312DB11E54B90700C3E52C /* BalancesModel.swift */; };
+		8F312DB51E54B91700C3E52C /* BalancesDataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F312DB41E54B91700C3E52C /* BalancesDataEntry.swift */; };
+		8F312DB71E54B91F00C3E52C /* DataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F312DB61E54B91F00C3E52C /* DataEntry.swift */; };
+		8F312DBC1E54B98200C3E52C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F312DB81E54B98200C3E52C /* AppCoordinator.swift */; };
+		8F312DBD1E54B98200C3E52C /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F312DB91E54B98200C3E52C /* AuthenticationCoordinator.swift */; };
+		8F312DBE1E54B98200C3E52C /* BalancesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F312DBA1E54B98200C3E52C /* BalancesCoordinator.swift */; };
+		8F312DBF1E54B98200C3E52C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F312DBB1E54B98200C3E52C /* Coordinator.swift */; };
+		8F312DC21E54B9E600C3E52C /* AuthenticateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F312DC01E54B9E600C3E52C /* AuthenticateViewModel.swift */; };
+		8F312DC31E54B9E600C3E52C /* BalancesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F312DC11E54B9E600C3E52C /* BalancesViewModel.swift */; };
+		8F312DC61E54B9F200C3E52C /* MVVMCAuthenticateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F312DC41E54B9F200C3E52C /* MVVMCAuthenticateViewModel.swift */; };
+		8F312DC71E54B9F200C3E52C /* MVVMCBalancesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F312DC51E54B9F200C3E52C /* MVVMCBalancesViewModel.swift */; };
+		8F494B811E5496F00081AFA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F494B801E5496F00081AFA9 /* AppDelegate.swift */; };
+		8F494B881E5496F00081AFA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F494B871E5496F00081AFA9 /* Assets.xcassets */; };
+		8F494B8B1E5496F00081AFA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F494B891E5496F00081AFA9 /* LaunchScreen.storyboard */; };
+		8F494B961E5496F00081AFA9 /* LifeSoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F494B951E5496F00081AFA9 /* LifeSoundTests.swift */; };
+		8F494BA11E5496F00081AFA9 /* LifeSoundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F494BA01E5496F00081AFA9 /* LifeSoundUITests.swift */; };
+		8F6C98401E54BAB200780844 /* MVVM-C.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F6C983D1E54BAB200780844 /* MVVM-C.storyboard */; };
+		8F6C98411E54BAB200780844 /* MVVMCAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6C983E1E54BAB200780844 /* MVVMCAuthenticationViewController.swift */; };
+		8F6C98421E54BAB200780844 /* MVVMCBalancesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6C983F1E54BAB200780844 /* MVVMCBalancesViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F494B921E5496F00081AFA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F494B751E5496F00081AFA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F494B7C1E5496F00081AFA9;
+			remoteInfo = LifeSound;
+		};
+		8F494B9D1E5496F00081AFA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F494B751E5496F00081AFA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F494B7C1E5496F00081AFA9;
+			remoteInfo = LifeSound;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0760F6D63713C7C7C0821092 /* Pods_LifeSoundUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeSoundUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D2DE070DE8457D4BE2620A1 /* Pods-LifeSoundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeSoundTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LifeSoundTests/Pods-LifeSoundTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2717503287127C71CAC3844D /* Pods-LifeSoundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeSoundUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LifeSoundUITests/Pods-LifeSoundUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3BF4F486509638024C9B2261 /* Pods-LifeSound.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeSound.release.xcconfig"; path = "Pods/Target Support Files/Pods-LifeSound/Pods-LifeSound.release.xcconfig"; sourceTree = "<group>"; };
+		52B350DBF17373146CB858AA /* Pods-LifeSoundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeSoundTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LifeSoundTests/Pods-LifeSoundTests.release.xcconfig"; sourceTree = "<group>"; };
+		833B03251110CD2AE118A13D /* Pods_LifeSoundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeSoundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F17C6E81E54BE3E00A50D65 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		8F312DAC1E54B8E700C3E52C /* MVVMCAuthenticateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MVVMCAuthenticateModel.swift; path = Models/MVVMCAuthenticateModel.swift; sourceTree = "<group>"; };
+		8F312DAD1E54B8E700C3E52C /* MVVMCBalancesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MVVMCBalancesModel.swift; path = Models/MVVMCBalancesModel.swift; sourceTree = "<group>"; };
+		8F312DB01E54B90700C3E52C /* AuthenticateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticateModel.swift; path = Models/AuthenticateModel.swift; sourceTree = "<group>"; };
+		8F312DB11E54B90700C3E52C /* BalancesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BalancesModel.swift; path = Models/BalancesModel.swift; sourceTree = "<group>"; };
+		8F312DB41E54B91700C3E52C /* BalancesDataEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BalancesDataEntry.swift; path = Models/BalancesDataEntry.swift; sourceTree = "<group>"; };
+		8F312DB61E54B91F00C3E52C /* DataEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataEntry.swift; path = Models/DataEntry.swift; sourceTree = "<group>"; };
+		8F312DB81E54B98200C3E52C /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCoordinator.swift; path = Coordinators/AppCoordinator.swift; sourceTree = "<group>"; };
+		8F312DB91E54B98200C3E52C /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticationCoordinator.swift; path = Coordinators/AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		8F312DBA1E54B98200C3E52C /* BalancesCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BalancesCoordinator.swift; path = Coordinators/BalancesCoordinator.swift; sourceTree = "<group>"; };
+		8F312DBB1E54B98200C3E52C /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = Coordinators/Coordinator.swift; sourceTree = "<group>"; };
+		8F312DC01E54B9E600C3E52C /* AuthenticateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticateViewModel.swift; path = ViewModels/AuthenticateViewModel.swift; sourceTree = "<group>"; };
+		8F312DC11E54B9E600C3E52C /* BalancesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BalancesViewModel.swift; path = ViewModels/BalancesViewModel.swift; sourceTree = "<group>"; };
+		8F312DC41E54B9F200C3E52C /* MVVMCAuthenticateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MVVMCAuthenticateViewModel.swift; path = ViewModels/MVVMCAuthenticateViewModel.swift; sourceTree = "<group>"; };
+		8F312DC51E54B9F200C3E52C /* MVVMCBalancesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MVVMCBalancesViewModel.swift; path = ViewModels/MVVMCBalancesViewModel.swift; sourceTree = "<group>"; };
+		8F494B7D1E5496F00081AFA9 /* LifeSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F494B801E5496F00081AFA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F494B871E5496F00081AFA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F494B8A1E5496F00081AFA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F494B8C1E5496F00081AFA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F494B911E5496F00081AFA9 /* LifeSoundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeSoundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F494B951E5496F00081AFA9 /* LifeSoundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeSoundTests.swift; sourceTree = "<group>"; };
+		8F494B971E5496F00081AFA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F494B9C1E5496F00081AFA9 /* LifeSoundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeSoundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F494BA01E5496F00081AFA9 /* LifeSoundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeSoundUITests.swift; sourceTree = "<group>"; };
+		8F494BA21E5496F00081AFA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F6C983D1E54BAB200780844 /* MVVM-C.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "MVVM-C.storyboard"; path = "Views/MVVM-C.storyboard"; sourceTree = "<group>"; };
+		8F6C983E1E54BAB200780844 /* MVVMCAuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MVVMCAuthenticationViewController.swift; path = Views/MVVMCAuthenticationViewController.swift; sourceTree = "<group>"; };
+		8F6C983F1E54BAB200780844 /* MVVMCBalancesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MVVMCBalancesViewController.swift; path = Views/MVVMCBalancesViewController.swift; sourceTree = "<group>"; };
+		93981222DD00D4240B243EB2 /* Pods-LifeSoundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeSoundUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LifeSoundUITests/Pods-LifeSoundUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0DEA714381F8556E1D84408 /* Pods_LifeSound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeSound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49F397CB8B78E667A38FF36 /* Pods-LifeSound.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeSound.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LifeSound/Pods-LifeSound.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F494B7A1E5496F00081AFA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDAB098D010BD043EE82BF8 /* Pods_LifeSound.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F494B8E1E5496F00081AFA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779700ADB2D8C2E5DB5E6988 /* Pods_LifeSoundTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F494B991E5496F00081AFA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B635779270A7D9B15544534 /* Pods_LifeSoundUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		474808FC84EED07F83EA4879 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0DEA714381F8556E1D84408 /* Pods_LifeSound.framework */,
+				833B03251110CD2AE118A13D /* Pods_LifeSoundTests.framework */,
+				0760F6D63713C7C7C0821092 /* Pods_LifeSoundUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F494B741E5496F00081AFA9 = {
+			isa = PBXGroup;
+			children = (
+				8F494B7F1E5496F00081AFA9 /* LifeSound */,
+				8F494B941E5496F00081AFA9 /* LifeSoundTests */,
+				8F494B9F1E5496F00081AFA9 /* LifeSoundUITests */,
+				8F494B7E1E5496F00081AFA9 /* Products */,
+				96A0846E0C8452A42F0219A8 /* Pods */,
+				474808FC84EED07F83EA4879 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8F494B7E1E5496F00081AFA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F494B7D1E5496F00081AFA9 /* LifeSound.app */,
+				8F494B911E5496F00081AFA9 /* LifeSoundTests.xctest */,
+				8F494B9C1E5496F00081AFA9 /* LifeSoundUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F494B7F1E5496F00081AFA9 /* LifeSound */ = {
+			isa = PBXGroup;
+			children = (
+				8F494BAE1E54981F0081AFA9 /* Coordinators */,
+				8F494BAF1E5498270081AFA9 /* Models */,
+				8F494BB01E5498390081AFA9 /* ViewModels */,
+				8F494BB31E54985E0081AFA9 /* Views */,
+				8F494B801E5496F00081AFA9 /* AppDelegate.swift */,
+				8F17C6E81E54BE3E00A50D65 /* AppConstants.swift */,
+				8F494B871E5496F00081AFA9 /* Assets.xcassets */,
+				8F494B891E5496F00081AFA9 /* LaunchScreen.storyboard */,
+				8F494B8C1E5496F00081AFA9 /* Info.plist */,
+			);
+			path = LifeSound;
+			sourceTree = "<group>";
+		};
+		8F494B941E5496F00081AFA9 /* LifeSoundTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F494B951E5496F00081AFA9 /* LifeSoundTests.swift */,
+				8F494B971E5496F00081AFA9 /* Info.plist */,
+			);
+			path = LifeSoundTests;
+			sourceTree = "<group>";
+		};
+		8F494B9F1E5496F00081AFA9 /* LifeSoundUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8F494BA01E5496F00081AFA9 /* LifeSoundUITests.swift */,
+				8F494BA21E5496F00081AFA9 /* Info.plist */,
+			);
+			path = LifeSoundUITests;
+			sourceTree = "<group>";
+		};
+		8F494BAE1E54981F0081AFA9 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8F312DB81E54B98200C3E52C /* AppCoordinator.swift */,
+				8F312DB91E54B98200C3E52C /* AuthenticationCoordinator.swift */,
+				8F312DBA1E54B98200C3E52C /* BalancesCoordinator.swift */,
+				8F312DBB1E54B98200C3E52C /* Coordinator.swift */,
+			);
+			name = Coordinators;
+			sourceTree = "<group>";
+		};
+		8F494BAF1E5498270081AFA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F494BC01E5498DA0081AFA9 /* Data */,
+				8F494BB21E5498550081AFA9 /* Protocols */,
+				8F312DAC1E54B8E700C3E52C /* MVVMCAuthenticateModel.swift */,
+				8F312DAD1E54B8E700C3E52C /* MVVMCBalancesModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8F494BB01E5498390081AFA9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8F494BB11E54984A0081AFA9 /* Protocols */,
+				8F312DC41E54B9F200C3E52C /* MVVMCAuthenticateViewModel.swift */,
+				8F312DC51E54B9F200C3E52C /* MVVMCBalancesViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		8F494BB11E54984A0081AFA9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8F312DC01E54B9E600C3E52C /* AuthenticateViewModel.swift */,
+				8F312DC11E54B9E600C3E52C /* BalancesViewModel.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		8F494BB21E5498550081AFA9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8F312DB01E54B90700C3E52C /* AuthenticateModel.swift */,
+				8F312DB11E54B90700C3E52C /* BalancesModel.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		8F494BB31E54985E0081AFA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F6C983D1E54BAB200780844 /* MVVM-C.storyboard */,
+				8F6C983E1E54BAB200780844 /* MVVMCAuthenticationViewController.swift */,
+				8F6C983F1E54BAB200780844 /* MVVMCBalancesViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8F494BC01E5498DA0081AFA9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8F494BC21E5498FB0081AFA9 /* DataProtocols */,
+				8F494BC11E5498EE0081AFA9 /* DataRealms */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		8F494BC11E5498EE0081AFA9 /* DataRealms */ = {
+			isa = PBXGroup;
+			children = (
+				8F312DB41E54B91700C3E52C /* BalancesDataEntry.swift */,
+			);
+			name = DataRealms;
+			sourceTree = "<group>";
+		};
+		8F494BC21E5498FB0081AFA9 /* DataProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				8F312DB61E54B91F00C3E52C /* DataEntry.swift */,
+			);
+			name = DataProtocols;
+			sourceTree = "<group>";
+		};
+		96A0846E0C8452A42F0219A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E49F397CB8B78E667A38FF36 /* Pods-LifeSound.debug.xcconfig */,
+				3BF4F486509638024C9B2261 /* Pods-LifeSound.release.xcconfig */,
+				0D2DE070DE8457D4BE2620A1 /* Pods-LifeSoundTests.debug.xcconfig */,
+				52B350DBF17373146CB858AA /* Pods-LifeSoundTests.release.xcconfig */,
+				93981222DD00D4240B243EB2 /* Pods-LifeSoundUITests.debug.xcconfig */,
+				2717503287127C71CAC3844D /* Pods-LifeSoundUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F494B7C1E5496F00081AFA9 /* LifeSound */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F494BA51E5496F00081AFA9 /* Build configuration list for PBXNativeTarget "LifeSound" */;
+			buildPhases = (
+				40D0C08C2C88C07F81ECF94F /* [CP] Check Pods Manifest.lock */,
+				8F494B791E5496F00081AFA9 /* Sources */,
+				8F494B7A1E5496F00081AFA9 /* Frameworks */,
+				8F494B7B1E5496F00081AFA9 /* Resources */,
+				641803D47E9D67F69754F502 /* [CP] Embed Pods Frameworks */,
+				0935EAB004657FE84445183D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LifeSound;
+			productName = LifeSound;
+			productReference = 8F494B7D1E5496F00081AFA9 /* LifeSound.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F494B901E5496F00081AFA9 /* LifeSoundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F494BA81E5496F00081AFA9 /* Build configuration list for PBXNativeTarget "LifeSoundTests" */;
+			buildPhases = (
+				0A61357E62C42AAB96BCA969 /* [CP] Check Pods Manifest.lock */,
+				8F494B8D1E5496F00081AFA9 /* Sources */,
+				8F494B8E1E5496F00081AFA9 /* Frameworks */,
+				8F494B8F1E5496F00081AFA9 /* Resources */,
+				E5BDB3E4CCD906897ACE921F /* [CP] Embed Pods Frameworks */,
+				E9202DC7DCBF0C8DAD732DB7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F494B931E5496F00081AFA9 /* PBXTargetDependency */,
+			);
+			name = LifeSoundTests;
+			productName = LifeSoundTests;
+			productReference = 8F494B911E5496F00081AFA9 /* LifeSoundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8F494B9B1E5496F00081AFA9 /* LifeSoundUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F494BAB1E5496F00081AFA9 /* Build configuration list for PBXNativeTarget "LifeSoundUITests" */;
+			buildPhases = (
+				37881E7F294D60EE0FFD2C75 /* [CP] Check Pods Manifest.lock */,
+				8F494B981E5496F00081AFA9 /* Sources */,
+				8F494B991E5496F00081AFA9 /* Frameworks */,
+				8F494B9A1E5496F00081AFA9 /* Resources */,
+				F7A7B130F22FAE03F193D0F1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F494B9E1E5496F00081AFA9 /* PBXTargetDependency */,
+			);
+			name = LifeSoundUITests;
+			productName = LifeSoundUITests;
+			productReference = 8F494B9C1E5496F00081AFA9 /* LifeSoundUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F494B751E5496F00081AFA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Stephan Korner";
+				TargetAttributes = {
+					8F494B7C1E5496F00081AFA9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L2LWLYYW3N;
+						ProvisioningStyle = Automatic;
+					};
+					8F494B901E5496F00081AFA9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L2LWLYYW3N;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8F494B7C1E5496F00081AFA9;
+					};
+					8F494B9B1E5496F00081AFA9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L2LWLYYW3N;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8F494B7C1E5496F00081AFA9;
+					};
+				};
+			};
+			buildConfigurationList = 8F494B781E5496F00081AFA9 /* Build configuration list for PBXProject "LifeSound" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F494B741E5496F00081AFA9;
+			productRefGroup = 8F494B7E1E5496F00081AFA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F494B7C1E5496F00081AFA9 /* LifeSound */,
+				8F494B901E5496F00081AFA9 /* LifeSoundTests */,
+				8F494B9B1E5496F00081AFA9 /* LifeSoundUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F494B7B1E5496F00081AFA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F494B8B1E5496F00081AFA9 /* LaunchScreen.storyboard in Resources */,
+				8F6C98401E54BAB200780844 /* MVVM-C.storyboard in Resources */,
+				8F494B881E5496F00081AFA9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F494B8F1E5496F00081AFA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F494B9A1E5496F00081AFA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0935EAB004657FE84445183D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LifeSound/Pods-LifeSound-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0A61357E62C42AAB96BCA969 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		37881E7F294D60EE0FFD2C75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		40D0C08C2C88C07F81ECF94F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		641803D47E9D67F69754F502 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LifeSound/Pods-LifeSound-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5BDB3E4CCD906897ACE921F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LifeSoundTests/Pods-LifeSoundTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9202DC7DCBF0C8DAD732DB7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LifeSoundTests/Pods-LifeSoundTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7A7B130F22FAE03F193D0F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LifeSoundUITests/Pods-LifeSoundUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F494B791E5496F00081AFA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F312DC61E54B9F200C3E52C /* MVVMCAuthenticateViewModel.swift in Sources */,
+				8F17C6E91E54BE3E00A50D65 /* AppConstants.swift in Sources */,
+				8F312DB71E54B91F00C3E52C /* DataEntry.swift in Sources */,
+				8F6C98421E54BAB200780844 /* MVVMCBalancesViewController.swift in Sources */,
+				8F312DBD1E54B98200C3E52C /* AuthenticationCoordinator.swift in Sources */,
+				8F312DAF1E54B8E700C3E52C /* MVVMCBalancesModel.swift in Sources */,
+				8F312DB21E54B90700C3E52C /* AuthenticateModel.swift in Sources */,
+				8F312DBC1E54B98200C3E52C /* AppCoordinator.swift in Sources */,
+				8F312DC21E54B9E600C3E52C /* AuthenticateViewModel.swift in Sources */,
+				8F312DC71E54B9F200C3E52C /* MVVMCBalancesViewModel.swift in Sources */,
+				8F312DB51E54B91700C3E52C /* BalancesDataEntry.swift in Sources */,
+				8F312DB31E54B90700C3E52C /* BalancesModel.swift in Sources */,
+				8F494B811E5496F00081AFA9 /* AppDelegate.swift in Sources */,
+				8F312DAE1E54B8E700C3E52C /* MVVMCAuthenticateModel.swift in Sources */,
+				8F312DBE1E54B98200C3E52C /* BalancesCoordinator.swift in Sources */,
+				8F312DC31E54B9E600C3E52C /* BalancesViewModel.swift in Sources */,
+				8F6C98411E54BAB200780844 /* MVVMCAuthenticationViewController.swift in Sources */,
+				8F312DBF1E54B98200C3E52C /* Coordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F494B8D1E5496F00081AFA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F494B961E5496F00081AFA9 /* LifeSoundTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F494B981E5496F00081AFA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F494BA11E5496F00081AFA9 /* LifeSoundUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F494B931E5496F00081AFA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F494B7C1E5496F00081AFA9 /* LifeSound */;
+			targetProxy = 8F494B921E5496F00081AFA9 /* PBXContainerItemProxy */;
+		};
+		8F494B9E1E5496F00081AFA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F494B7C1E5496F00081AFA9 /* LifeSound */;
+			targetProxy = 8F494B9D1E5496F00081AFA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8F494B891E5496F00081AFA9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F494B8A1E5496F00081AFA9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F494BA31E5496F00081AFA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F494BA41E5496F00081AFA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F494BA61E5496F00081AFA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E49F397CB8B78E667A38FF36 /* Pods-LifeSound.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L2LWLYYW3N;
+				INFOPLIST_FILE = LifeSound/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ideenkaffee.LifeSound;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8F494BA71E5496F00081AFA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BF4F486509638024C9B2261 /* Pods-LifeSound.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L2LWLYYW3N;
+				INFOPLIST_FILE = LifeSound/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ideenkaffee.LifeSound;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8F494BA91E5496F00081AFA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D2DE070DE8457D4BE2620A1 /* Pods-LifeSoundTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L2LWLYYW3N;
+				INFOPLIST_FILE = LifeSoundTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ideenkaffee.LifeSoundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeSound.app/LifeSound";
+			};
+			name = Debug;
+		};
+		8F494BAA1E5496F00081AFA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52B350DBF17373146CB858AA /* Pods-LifeSoundTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L2LWLYYW3N;
+				INFOPLIST_FILE = LifeSoundTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ideenkaffee.LifeSoundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeSound.app/LifeSound";
+			};
+			name = Release;
+		};
+		8F494BAC1E5496F00081AFA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93981222DD00D4240B243EB2 /* Pods-LifeSoundUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = L2LWLYYW3N;
+				INFOPLIST_FILE = LifeSoundUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ideenkaffee.LifeSoundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LifeSound;
+			};
+			name = Debug;
+		};
+		8F494BAD1E5496F00081AFA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2717503287127C71CAC3844D /* Pods-LifeSoundUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = L2LWLYYW3N;
+				INFOPLIST_FILE = LifeSoundUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ideenkaffee.LifeSoundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LifeSound;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F494B781E5496F00081AFA9 /* Build configuration list for PBXProject "LifeSound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F494BA31E5496F00081AFA9 /* Debug */,
+				8F494BA41E5496F00081AFA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F494BA51E5496F00081AFA9 /* Build configuration list for PBXNativeTarget "LifeSound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F494BA61E5496F00081AFA9 /* Debug */,
+				8F494BA71E5496F00081AFA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F494BA81E5496F00081AFA9 /* Build configuration list for PBXNativeTarget "LifeSoundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F494BA91E5496F00081AFA9 /* Debug */,
+				8F494BAA1E5496F00081AFA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F494BAB1E5496F00081AFA9 /* Build configuration list for PBXNativeTarget "LifeSoundUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F494BAC1E5496F00081AFA9 /* Debug */,
+				8F494BAD1E5496F00081AFA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F494B751E5496F00081AFA9 /* Project object */;
+}
