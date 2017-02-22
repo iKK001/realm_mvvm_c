@@ -10,6 +10,8 @@
 		4DDAB098D010BD043EE82BF8 /* Pods_LifeSound.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DEA714381F8556E1D84408 /* Pods_LifeSound.framework */; };
 		6B635779270A7D9B15544534 /* Pods_LifeSoundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0760F6D63713C7C7C0821092 /* Pods_LifeSoundUITests.framework */; };
 		779700ADB2D8C2E5DB5E6988 /* Pods_LifeSoundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833B03251110CD2AE118A13D /* Pods_LifeSoundTests.framework */; };
+		8F0D8F571E5DEB2500686D5A /* CustomBalanceEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0D8F551E5DEB2500686D5A /* CustomBalanceEntryTableViewCell.swift */; };
+		8F0D8F581E5DEB2500686D5A /* CustomBalanceHistoryDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0D8F561E5DEB2500686D5A /* CustomBalanceHistoryDatePicker.swift */; };
 		8F17C6E91E54BE3E00A50D65 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F17C6E81E54BE3E00A50D65 /* AppConstants.swift */; };
 		8F312DAE1E54B8E700C3E52C /* MVVMCAuthenticateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F312DAC1E54B8E700C3E52C /* MVVMCAuthenticateModel.swift */; };
 		8F312DAF1E54B8E700C3E52C /* MVVMCBalancesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F312DAD1E54B8E700C3E52C /* MVVMCBalancesModel.swift */; };
@@ -33,6 +35,7 @@
 		8F6C98401E54BAB200780844 /* MVVM-C.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F6C983D1E54BAB200780844 /* MVVM-C.storyboard */; };
 		8F6C98411E54BAB200780844 /* MVVMCAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6C983E1E54BAB200780844 /* MVVMCAuthenticationViewController.swift */; };
 		8F6C98421E54BAB200780844 /* MVVMCBalancesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6C983F1E54BAB200780844 /* MVVMCBalancesViewController.swift */; };
+		8FB4487B1E5DD2F9002D49CD /* UISlider_discrete_iKK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4487A1E5DD2F9002D49CD /* UISlider_discrete_iKK.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,8 @@
 		3BF4F486509638024C9B2261 /* Pods-LifeSound.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeSound.release.xcconfig"; path = "Pods/Target Support Files/Pods-LifeSound/Pods-LifeSound.release.xcconfig"; sourceTree = "<group>"; };
 		52B350DBF17373146CB858AA /* Pods-LifeSoundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeSoundTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LifeSoundTests/Pods-LifeSoundTests.release.xcconfig"; sourceTree = "<group>"; };
 		833B03251110CD2AE118A13D /* Pods_LifeSoundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeSoundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0D8F551E5DEB2500686D5A /* CustomBalanceEntryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomBalanceEntryTableViewCell.swift; path = Views/customViewElements/CustomBalanceEntryTableViewCell.swift; sourceTree = "<group>"; };
+		8F0D8F561E5DEB2500686D5A /* CustomBalanceHistoryDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomBalanceHistoryDatePicker.swift; path = Views/customViewElements/CustomBalanceHistoryDatePicker.swift; sourceTree = "<group>"; };
 		8F17C6E81E54BE3E00A50D65 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		8F312DAC1E54B8E700C3E52C /* MVVMCAuthenticateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MVVMCAuthenticateModel.swift; path = Models/MVVMCAuthenticateModel.swift; sourceTree = "<group>"; };
 		8F312DAD1E54B8E700C3E52C /* MVVMCBalancesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MVVMCBalancesModel.swift; path = Models/MVVMCBalancesModel.swift; sourceTree = "<group>"; };
@@ -88,6 +93,7 @@
 		8F6C983D1E54BAB200780844 /* MVVM-C.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "MVVM-C.storyboard"; path = "Views/MVVM-C.storyboard"; sourceTree = "<group>"; };
 		8F6C983E1E54BAB200780844 /* MVVMCAuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MVVMCAuthenticationViewController.swift; path = Views/MVVMCAuthenticationViewController.swift; sourceTree = "<group>"; };
 		8F6C983F1E54BAB200780844 /* MVVMCBalancesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MVVMCBalancesViewController.swift; path = Views/MVVMCBalancesViewController.swift; sourceTree = "<group>"; };
+		8FB4487A1E5DD2F9002D49CD /* UISlider_discrete_iKK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UISlider_discrete_iKK.swift; path = Views/customViewElements/UISlider_discrete_iKK.swift; sourceTree = "<group>"; };
 		93981222DD00D4240B243EB2 /* Pods-LifeSoundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeSoundUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LifeSoundUITests/Pods-LifeSoundUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E0DEA714381F8556E1D84408 /* Pods_LifeSound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeSound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49F397CB8B78E667A38FF36 /* Pods-LifeSound.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeSound.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LifeSound/Pods-LifeSound.debug.xcconfig"; sourceTree = "<group>"; };
@@ -240,6 +246,7 @@
 		8F494BB31E54985E0081AFA9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8FFBEC401E59D34600CC381E /* CustomViewComponents */,
 				8F6C983D1E54BAB200780844 /* MVVM-C.storyboard */,
 				8F6C983E1E54BAB200780844 /* MVVMCAuthenticationViewController.swift */,
 				8F6C983F1E54BAB200780844 /* MVVMCBalancesViewController.swift */,
@@ -270,6 +277,16 @@
 				8F312DB61E54B91F00C3E52C /* DataEntry.swift */,
 			);
 			name = DataProtocols;
+			sourceTree = "<group>";
+		};
+		8FFBEC401E59D34600CC381E /* CustomViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				8F0D8F551E5DEB2500686D5A /* CustomBalanceEntryTableViewCell.swift */,
+				8F0D8F561E5DEB2500686D5A /* CustomBalanceHistoryDatePicker.swift */,
+				8FB4487A1E5DD2F9002D49CD /* UISlider_discrete_iKK.swift */,
+			);
+			name = CustomViewComponents;
 			sourceTree = "<group>";
 		};
 		96A0846E0C8452A42F0219A8 /* Pods */ = {
@@ -560,14 +577,17 @@
 				8F312DBD1E54B98200C3E52C /* AuthenticationCoordinator.swift in Sources */,
 				8F312DAF1E54B8E700C3E52C /* MVVMCBalancesModel.swift in Sources */,
 				8F312DB21E54B90700C3E52C /* AuthenticateModel.swift in Sources */,
+				8FB4487B1E5DD2F9002D49CD /* UISlider_discrete_iKK.swift in Sources */,
 				8F312DBC1E54B98200C3E52C /* AppCoordinator.swift in Sources */,
 				8F312DC21E54B9E600C3E52C /* AuthenticateViewModel.swift in Sources */,
+				8F0D8F571E5DEB2500686D5A /* CustomBalanceEntryTableViewCell.swift in Sources */,
 				8F312DC71E54B9F200C3E52C /* MVVMCBalancesViewModel.swift in Sources */,
 				8F312DB51E54B91700C3E52C /* BalancesDataEntry.swift in Sources */,
 				8F312DB31E54B90700C3E52C /* BalancesModel.swift in Sources */,
 				8F494B811E5496F00081AFA9 /* AppDelegate.swift in Sources */,
 				8F312DAE1E54B8E700C3E52C /* MVVMCAuthenticateModel.swift in Sources */,
 				8F312DBE1E54B98200C3E52C /* BalancesCoordinator.swift in Sources */,
+				8F0D8F581E5DEB2500686D5A /* CustomBalanceHistoryDatePicker.swift in Sources */,
 				8F312DC31E54B9E600C3E52C /* BalancesViewModel.swift in Sources */,
 				8F6C98411E54BAB200780844 /* MVVMCAuthenticationViewController.swift in Sources */,
 				8F312DBF1E54B98200C3E52C /* Coordinator.swift in Sources */,

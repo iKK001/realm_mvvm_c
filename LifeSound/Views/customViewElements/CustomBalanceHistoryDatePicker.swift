@@ -1,5 +1,5 @@
 //
-//  Coordinator.swift
+//  MVVMCBalanceHistoryPicker.swift
 //  LifeSound
 //
 //  Created by Stephan Korner on 19.02.17.
@@ -8,8 +8,7 @@
 
 import UIKit
 
-protocol Coordinator: class
-{    
-    func start()
+class CustomBalanceHistoryPickerView: UIPickerView {
+	
+	
 }
-

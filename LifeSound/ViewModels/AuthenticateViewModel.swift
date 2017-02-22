@@ -1,9 +1,9 @@
 //
 //  AuthenticateViewModel.swift
-//  MVVM-C
+//  LifeSound
 //
-//  Created by Scotty on 20/05/2016.
-//  Copyright © 2016 Streambyte Limited. All rights reserved.
+//  Created by Stephan Korner on 19.02.17.
+//  Copyright © 2017 Stephan Korner. All rights reserved.
 //
 
 

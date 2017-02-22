@@ -1,9 +1,9 @@
 //
 //  AppCoordinator.swift
-//  MVVM-C
+//  LifeSound
 //
-//  Created by Scotty on 19/05/2016.
-//  Copyright © 2016 Streambyte Limited. All rights reserved.
+//  Created by Stephan Korner on 19.02.17.
+//  Copyright © 2017 Stephan Korner. All rights reserved.
 //
 
 import UIKit
@@ -38,7 +38,7 @@ class AppCoordinator: Coordinator
 extension AppCoordinator: AuthenticationCoordinatorDelegate
 {
     var isLoggedIn: Bool {
-        return false;
+        return true;
     }
     
     func showAuthentication()
@@ -61,10 +61,10 @@ extension AppCoordinator: BalancesCoordinatorDelegate
 {
     func showBalances()
     {
-        let listCoordinator = BalancesCoordinator(window: window)
-        coordinators[LIST_KEY] = listCoordinator
-        listCoordinator.delegate = self
-        listCoordinator.start()
+        let balanceCoordinator = BalancesCoordinator(window: window)
+        coordinators[LIST_KEY] = balanceCoordinator
+        balanceCoordinator.delegate = self
+        balanceCoordinator.start()
     }
     
     func balancesCoordinatorDidFinish(BalancesCoordinator: BalancesCoordinator)
